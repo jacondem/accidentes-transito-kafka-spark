@@ -3,7 +3,7 @@ import time
 import pandas as pd
 import streamlit as st
 
-DB = '/home/admin/resultados/dashboard.db'
+DB = '/home/vboxuser/resultados/dashboard.db'
 
 st.set_page_config(page_title='Accidentes en tiempo real', layout='wide')
 st.title('Accidentes de tránsito en tiempo real')
