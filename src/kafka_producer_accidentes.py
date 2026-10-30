@@ -50,7 +50,7 @@ def construir_reporte(fila):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('--archivo', default='/home/admin/data/Road_Accident_Data.csv')
+    p.add_argument('--archivo', default='/home/vboxuser/data/Road_Accident_Data.csv')
     p.add_argument('--servidor', default='localhost:9092')
     p.add_argument('--topico', default='accidentes_reportes')
     p.add_argument('--delay', type=float, default=0.5,
