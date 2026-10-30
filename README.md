@@ -319,7 +319,8 @@ La consola web de Spark está disponible en `http://IP-DE-LA-VM:4040` mientras c
 
 ## 14. Fuente de los datos y créditos
 
-- **Datos:** *Road Accident Data* (registros de accidentes de tráfico en Kensington y Chelsea, enero de 2021). Indique aquí el enlace a la fuente original y su licencia.
+- **Datos:** *Road Accident Data* (registros de accidentes de tráfico en Kensington y Chelsea, enero de 2021). https://www.kaggle.com/datasets/nextmillionaire/car-accident-dataset
+  
 - **Software:** Apache Kafka, Apache Spark, Streamlit y kafka-python, cada uno bajo su propia licencia.
 
 **Autor:** jonatan · Ingeniería de Sistemas · UNAD
