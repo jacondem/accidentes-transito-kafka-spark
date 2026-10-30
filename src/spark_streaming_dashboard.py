@@ -6,7 +6,7 @@ from pyspark.sql.types import (StructType, StructField, StringType,
 
 KAFKA = 'localhost:9092'
 TOPICO = 'accidentes_reportes'
-HIST = '/home/admin/resultados/hist_hora'
+HIST = '/home/vboxuser/resultados/hist_hora'
 modo = sys.argv[1] if len(sys.argv) > 1 else 'todas'
 
 spark = (SparkSession.builder.appName('AccidentesTiempoReal')
@@ -47,7 +47,7 @@ hist = spark.read.parquet(HIST)
 
 import sqlite3
 
-DB = '/home/admin/resultados/dashboard.db'
+DB = '/home/vboxuser/resultados/dashboard.db'
 
 
 def a_sqlite(tabla, modo):
