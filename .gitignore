@@ -1,0 +1,10 @@
+data/*.csv
+resultados/
+*.db
+*.parquet
+__pycache__/
+*.pyc
+spark-warehouse/
+metastore_db/
+checkpoints/
+.venv/
