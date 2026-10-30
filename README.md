@@ -1,6 +1,6 @@
 # Análisis de accidentes de tránsito en tiempo real con Apache Kafka y Spark Structured Streaming
 
-Proyecto del curso **Big Data (código 202016911)** · Universidad Nacional Abierta y a Distancia (UNAD) · Programa de Ingeniería de Sistemas.
+Proyecto del curso **Big Data** · Universidad Nacional Abierta y a Distancia (UNAD) · Programa de Ingeniería de Sistemas.
 
 Este proyecto procesa el histórico de accidentes de tránsito con Apache Spark y simula la llegada de nuevos reportes mediante Apache Kafka, para detectar horarios críticos, zonas con alta incidencia y condiciones asociadas con lesiones.
 
@@ -17,10 +17,9 @@ Este proyecto procesa el histórico de accidentes de tránsito con Apache Spark 
 9. [Formato del mensaje en Kafka](#9-formato-del-mensaje-en-kafka)
 10. [Consultas de streaming](#10-consultas-de-streaming)
 11. [Dashboard en tiempo real](#11-dashboard-en-tiempo-real)
-12. [Capturas de pantalla](#12-capturas-de-pantalla)
-13. [Solución de problemas](#13-solución-de-problemas)
-14. [Limitaciones y trabajo futuro](#14-limitaciones-y-trabajo-futuro)
-15. [Fuente de los datos y créditos](#15-fuente-de-los-datos-y-créditos)
+12. [Solución de problemas](#13-solución-de-problemas)
+13. [Limitaciones y trabajo futuro](#14-limitaciones-y-trabajo-futuro)
+14. [Fuente de los datos y créditos](#15-fuente-de-los-datos-y-créditos)
 
 ## 1. Definición del problema
 
@@ -296,23 +295,7 @@ Abra `http://IP-DE-LA-VM:8501` en el navegador. La IP se obtiene con `hostname -
 
 La consola web de Spark está disponible en `http://IP-DE-LA-VM:4040` mientras corre el consumidor.
 
-## 12. Capturas de pantalla
-
-Agregue sus capturas a la carpeta `docs/` con estos nombres, o ajuste las rutas.
-
-| Descripción | Archivo |
-|---|---|
-| Kafka activo y tema creado | `docs/01_kafka_tema.png` |
-| Productor enviando reportes | `docs/02_productor.png` |
-| Consumidor con Spark Streaming | `docs/03_consumidor.png` |
-| Dashboard en tiempo real | `docs/04_dashboard.png` |
-| Consola web de Spark (puerto 4040) | `docs/05_spark_ui.png` |
-
-```markdown
-![Dashboard en tiempo real](docs/04_dashboard.png)
-```
-
-## 13. Solución de problemas
+## 12. Solución de problemas
 
 | Síntoma | Causa probable | Solución |
 |---|---|---|
@@ -326,7 +309,7 @@ Agregue sus capturas a la carpeta `docs/` con estos nombres, o ajuste las rutas.
 | Poca memoria o lentitud | La máquina virtual tiene poca RAM | Aumentar la RAM o ejecutar una sola consulta |
 | Disco lleno | Poco espacio libre en la VM | Borrar el `.tgz` de Kafka y archivos temporales; revisar con `df -h` |
 
-## 14. Limitaciones y trabajo futuro
+## 13. Limitaciones y trabajo futuro
 
 - **Simulación:** los reportes provienen del mismo CSV, mezclados al azar. No hay un sistema real de reporte de accidentes.
 - **Un solo broker y una partición:** adecuado para una máquina virtual, pero no refleja un clúster real.
@@ -334,9 +317,9 @@ Agregue sus capturas a la carpeta `docs/` con estos nombres, o ajuste las rutas.
 - **Rutas fijas:** los scripts usan rutas como `/home/vboxuser/...` y requieren ajuste en otros entornos.
 - **Mejoras posibles:** persistir resultados en una base de datos como PostgreSQL con Grafana, añadir un modelo de predicción de gravedad y usar varias particiones con más consumidores.
 
-## 15. Fuente de los datos y créditos
+## 14. Fuente de los datos y créditos
 
 - **Datos:** *Road Accident Data* (registros de accidentes de tráfico en Kensington y Chelsea, enero de 2021). Indique aquí el enlace a la fuente original y su licencia.
 - **Software:** Apache Kafka, Apache Spark, Streamlit y kafka-python, cada uno bajo su propia licencia.
 
-**Autor:** Su nombre · Ingeniería de Sistemas · UNAD
+**Autor:** jonatan · Ingeniería de Sistemas · UNAD
