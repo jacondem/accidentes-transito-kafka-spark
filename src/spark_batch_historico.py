@@ -2,8 +2,8 @@ import sys
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 
-RUTA = '/home/admin/data/Road_Accident_Data.csv'
-SALIDA = '/home/admin/resultados/hist_hora'
+RUTA = '/home/vboxuser/data/Road_Accident_Data.csv'
+SALIDA = '/home/vboxuser/resultados/hist_hora'
 
 # nombre interno -> columna real del CSV (ajustar si es necesario)
 MAPA = {
